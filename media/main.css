@@ -1,0 +1,89 @@
+body {
+  background-color: transparent;
+}
+
+.color-list {
+  list-style: none;
+  padding: 0;
+}
+
+.color-entry {
+  width: 100%;
+  display: flex;
+  margin-bottom: 0.4em;
+  border: 1px solid var(--vscode-input-border);
+}
+
+.color-preview {
+  width: 2em;
+  height: 2em;
+}
+
+.color-preview:hover {
+  outline: inset white;
+}
+
+.color-input {
+  display: block;
+  flex: 1;
+  width: 100%;
+  color: var(--vscode-input-foreground);
+  background-color: var(--vscode-input-background);
+  border: none;
+  padding: 0 0.6em;
+}
+
+.add-color-button {
+  display: block;
+  border: none;
+  margin: 0 auto;
+}
+
+#splash-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 60px;
+  letter-spacing: 0px;
+  word-spacing: 2px;
+  color: var(--vscode-editor-foreground);
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: none;
+}
+
+@keyframes load {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.load2 {
+  width: 50px;
+  height: 50px;
+  margin: 5%;
+  border: 5px solid grey;
+  border-top: 5px solid white;
+  border-radius: 60px;
+  animation: load 1s linear infinite;
+}
+
+@keyframes l2 {
+  25% {
+    transform: rotatey(-90deg)
+  }
+
+  50% {
+    transform: rotatey(0deg)
+  }
+
+  100% {
+    transform: rotatey(0deg)
+  }
+}
