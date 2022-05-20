@@ -119,6 +119,7 @@ export class ViewProvider {
       <title>Extension Name</title>
     </head>
     <body>
+    <div id="root"></div>
       <script nonce="${nonce}">
           const vscode = acquireVsCodeApi();
           console.log(vscode)
